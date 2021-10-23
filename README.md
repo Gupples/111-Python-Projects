@@ -1,2 +1,2 @@
 # Python-Projects
-Repository for my python projects
+For all my misc. python projects so nothing gets lost.
