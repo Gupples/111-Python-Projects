@@ -1,3 +1,5 @@
+# NOTE; This was fancy to begin with anyways; I just liked it :)
+
 # Display instructions for the whole program.
 def display_instructions():
     print("This program is an implementation of the Rosenberg Self-Esteem Scale.")
