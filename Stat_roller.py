@@ -33,12 +33,13 @@ def prompt_for_display(value, prompt, error):
 
 # Display all the rolls you made (and calculate total damage)
 def display_rolls(rolls, total_rolls, min_roll, roll_final, stat_number):
-    # Make stat number green
-    print(f"STAT #{stat_number}")
+    # Make stat number green. Note; When changing text color, the statement
+    # MUST be surrounded with single quotes.
+    print(f'STAT #{stat_number}')
     count = 1
     # Make text white again
-    print(f'DISPLAY KEY\nYou rolled: this many times')
-    print(f'**************')
+    print(f'\033[1;32;40mDISPLAY KEY\nYou rolled: this many times')
+    print(f'**************\033[0;37;40m')
     for i in rolls:
         if i != 0:
             print(f"{count}'s: {i}")
