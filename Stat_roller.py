@@ -89,22 +89,26 @@ def main():
             if is_valid_set:
                 print(f"------------------STAT SET #{count + 1}------------------\n")
         stats = get_stats(show_rolls)
+        stat_line = f"Stats: {stats} Stat total: {sum(stats)}"
         if sum(stats) >= 70:
-            stat_line = f"Stats: {stats} Stat total: {sum(stats)}"
-            print(stat_line)
+            if show_rolls:
+                print(stat_line)
+            else:
+                print(f'\033[1;34;40m{stat_line}\033[1;37;40m')
             all_stat_lines.append(stat_line)
             count += 1
             is_valid_set = True
         else:
             if show_rolls:
-                print(f"Stat total was {sum(stats)}, which does not meet stat",
-                    "minimum of 70. Rerolling stats...\n------------")
+                print(f'\033[1;31;40m{stat_line}\nStat total does not meet stat',
+                    'minimum of 70. Rerolling stats...\033[1;37;40m')
+                print(f"------------")
             is_valid_set = False
     if show_rolls:
         print()
-        print(f"---SUMMARY OF STAT TOTALS---")
+        print(f'\033[1;34;40m---SUMMARY OF STAT TOTALS---\033[1;37;40m')
         for i in all_stat_lines:
-            print(i)
+            print(f'{i}')
 
 if __name__ == "__main__":
     main()
