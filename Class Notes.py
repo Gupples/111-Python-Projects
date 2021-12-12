@@ -346,7 +346,7 @@ else:
 # items = [1, 2, 3, 4, 5, 6, 7, 8, 9] 
 # with open('new_file.csv'*, 'w'*) as file:
 #   for item in items:
-#       # This puts the item on a lline, and then adds \n.  
+#       # This puts the item on a line, and then adds \n.  
 #       file.write(str(item))
 #       file.write('\n')
 
