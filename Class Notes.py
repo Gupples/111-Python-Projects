@@ -519,9 +519,49 @@ with open("volumes.txt", mode="at") as stat_doc:
 #   "pass".
 # 
 # 
+# FROM NOW ON; WHEN INITIALIZING FUNCTIONS, USE;
+#   if __name__ == "__main__":
+#        main()
+# 
+# INSTEAD OF
+#   main()
+# 
+# This is because we're writing test functions, and writing the
+#  old way will always execute main(), which we don't want. This
+#  new way will only execute main() if it's in the actual program
+#  we're developing.
 # 
 # 
+# Another way of saying ! {something} is "not {something}", eg;
+#   if not inumber.isdigit():
+#       print('Invalid character in I-Number.')
+# 
+# READING CSV FILES!!!
+# 
+# Easy function to convert CSV files into dicitonaries is this;
+# ---------------- 
+# def read_products(filename, key_column_index):
+#     dictionary = {}
+#     with open(filename) as file:
+#         reader = csv.reader(file)
+#         next(reader)
+#         for row in reader:
+#             key = row[key_column_index]
+#             dictionary[key] = row
+#     return dictionary
 # 
 # 
-# 
+# LAMBDA FUNCTIONS!!!
+# Normal funciton looks like this;
+# set_int(number):
+#  number = 5.
 #  
+# Lambda function structures like this;
+#  lambda number: number = 5
+# 
+# Can be used for lists.
+# student_first_name = lambda student: student[FIRST_NAME_INDEX]
+# 
+# 
+# 
+# You can return multiple values when writing a function. Returns a tuple.
