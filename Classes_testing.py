@@ -50,6 +50,11 @@ class Teacher():
     @room.setter
     def room(self, value):
         self.__room = value
+    
+    # Change __str__ so it automatically returns the right string.
+    # VVV Tells the object what to print if the program tries to print it.
+    def __str__(self) -> str:
+        return f"{self.name} teaches {self.subject} in room {self.room}."
 
 def meet_teachers(list: list):
     """
@@ -62,7 +67,7 @@ def meet_teachers(list: list):
         nothing.
     """
     for item in list:
-        print(f"{item.name} teaches {item.subject} in room {item.room}.")
+        print(item)
     print()
 
 
