@@ -70,7 +70,7 @@ def main():
     # Declare 3 teachers.
     teacher1 = Teacher("Mr. Einstein", "Science", 116)
     teacher2 = Teacher("Mr. Miyagi", "Cooking", 225)
-    teacher3 = Teacher("Mr. Snape", "Potions", 731)
+    teacher3 = Teacher("Prof. Snape", "Potions", 731)
 
     # Make our list of teachers
     teachers = [teacher1, teacher2, teacher3]
