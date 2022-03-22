@@ -99,8 +99,6 @@ def main():
     teacher3.name = "Prof. McGonnagal"
     teacher3.subject = "Transfiguration"
 
-
-
     # Read correct list of teachers.
     meet_teachers(teachers)
     
