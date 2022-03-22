@@ -1,7 +1,8 @@
 """
 This is a document to get some practice in for making and using classes. I will
-have 3 teachers, each with a name, a subject they teach, and a classroom they
-teach in.
+have 3 teachers; each with a name, a subject they teach, and a classroom they
+teach in. The first set will be wrong, but then fixed later, and the list
+restated.
 
 Notes to self:
 NOTATION FOR OTHER PROGRAMMERS!!!
