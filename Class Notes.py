@@ -1,3 +1,14 @@
+"""
+YOUTUBE PLAYLISTS!!!
+--Microsoft Developer--
+Python for Beginners = https://www.youtube.com/playlist?list=PLlrxD0HtieHhS8VzuMCfQD4uJ9yne1mE6
+Everything from the ground up to finishing functions (not including lambda functions; those are
+in the next playlist.)
+
+More Python for Beginners = https://www.youtube.com/playlist?list=PLlrxD0HtieHiXd-nEby-TMCoUNwhbLUnj
+For Classes and Beyond.
+"""
+
 # CS 110: PROGRAMMING BUILDING BLOCKS!!!
 
 """
