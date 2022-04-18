@@ -11,12 +11,10 @@ NOTATION FOR OTHER PROGRAMMERS!!!
 When writing, it's okay. If you're modifying someone else's work, FOLLOW.
 """
 
-class Teacher():
+class Person():
     # Constructor.
-    def __init__(self, name, subject, room):
+    def __init__(self, name):
         self.name = name
-        self.subject = subject
-        self.room = room
 
     # Define Getters
     # Getter for name.
@@ -24,6 +22,21 @@ class Teacher():
     def name(self):
         return self.__name
 
+    # Define Setters
+    # Setter for name.
+    @name.setter
+    def name(self, value):
+        self.__name = value
+
+
+#INHERITANCE; Put the object being inherited in () after the class name
+class Teacher(Person):
+    def __init__(self, name, subject, room):
+        super().__init__(name)
+        self.room = room
+        self.subject = subject
+
+    # Take care of Getters
     # Getter for subject.
     @property
     def subject(self):
@@ -34,13 +47,7 @@ class Teacher():
     def room(self):
         return self.__room
 
-
-    # Define Setters
-    # Setter for name.
-    @name.setter
-    def name(self, value):
-        self.__name = value
-
+    # Take care of Setters
     # Setter for subject
     @subject.setter
     def subject(self, value):
@@ -50,7 +57,7 @@ class Teacher():
     @room.setter
     def room(self, value):
         self.__room = value
-    
+
     """
     YAGNI CASE (You Aren't Gonna Need It)
     # Change __str__ so it automatically returns the right string.
@@ -58,6 +65,8 @@ class Teacher():
     def __str__(self) -> str:
         return f"{self.name} teaches {self.subject} in room {self.room}."
     """
+
+
 
 def meet_teachers(list: list):
     """
@@ -72,6 +81,7 @@ def meet_teachers(list: list):
     for item in list:
         print(f"{item.name} teaches {item.subject} in room {item.room}.")
     print()
+
 
 
 def main():
