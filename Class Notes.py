@@ -576,3 +576,13 @@ with open("volumes.txt", mode="at") as stat_doc:
 # 
 # 
 # You can return multiple values when writing a function. Returns a tuple.
+# 
+# ORD FUNCTION!!!
+# ord() returns the unicode of the character that's passed into it. Note; lowercase 'a' has unicode number
+# of 97, while uppercase 'A' has unicode of 65, so use accordingly.
+# 
+# for letter in alphabet:
+#     if letter.islower():
+#         score = ord(letter) - 96
+#     else:
+#         score = ord(letter) - 64 
